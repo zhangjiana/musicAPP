@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    /**
+     * 回调函数测试方法
+     *
+     * @param callback
+     *
+     * /
+     /*            被回调的方法
+     */
+    function testCallback(callback) {
+        alert('come in!');
+        callback();
+    }
+
+    /**
+     * 被回调的函数
+     */
+    function a() {
+        alert('a');
+    }
+
+    /**
+     * 开始测试方法
+     */
+    function start() {
+        testCallback(a);
+    }
+    start();
+</script>
+</body>
+</html>
